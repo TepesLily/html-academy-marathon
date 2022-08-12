@@ -1,0 +1,113 @@
+body {
+    margin: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/* Секция 1.*/
+header {
+    margin: 0;
+}
+
+/* Стиль текста для секции 1*/
+.section-top {
+    font-style: normal;
+    font-weight: 400;
+    color: #533738;
+    height: 715px;
+    width: 100%;
+    background-image: url(img/bg-topa.jpg);
+}
+
+/* лого светильниК */
+header img {
+    position: absolute;
+    width: 25.34px;
+    height: 25px;
+    left: 98.32px;
+    top: 36px;
+}
+
+header {
+    font-size: 16px;
+    line-height: 20px;
+}
+
+/* название лого SCANDI */
+header p {
+    position: absolute;
+    left: 124px;
+    top: 38px;
+    margin: 0;
+
+    font-size: 16px;
+    line-height: 20px;
+}
+
+/* навигация по странице вверху старинцы */
+nav {
+    margin-top: 0;
+    position: absolute;
+    left: 278px;
+    top: 38px;
+}
+
+nav li {
+    list-style: none;
+    display: inline;
+    margin-right: 26.5px;
+}
+
+nav ul {
+    margin: 0;
+}
+
+.phone {
+    margin-left: 8px;
+}
+
+.section-top h1 {
+    font-weight: normal;
+    font-size: 50px;
+    line-height: 62px;
+    margin: 0;
+    position: absolute;
+    left: 184.08px;
+    top: 152px;
+    width: 534.02px;
+    height: 186px;
+}
+
+.welcome {
+    position: absolute;
+    width: 370px;
+    height: 90px;
+    left: 184.08px;
+    top: 362px;
+    margin: 0;
+    font-size: 18px;
+    line-height: 30px;
+}
+
+/* КНОПКА Оставить заявку */
+.section-top button {
+    position: absolute;
+    width: 309px;
+    height: 74px;
+    left: 183px;
+    top: 473px;
+    background-color: #CC8B86;
+    border: none;
+
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+}
+
+/* -------------------------------------------------------------- */
+/* SECTION 2 */
+
+.about-us {
+    background-color: #E5E5E5;
+    ;
+}
