@@ -6,23 +6,27 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
     <title>SCANDI</title>
 </head>
 
 <body>
+    <!-- навигация и вводная часть -->
     <section class="section-top">
         <header>
             <img src="img/logo-top.svg" alt="логотип в виде напольной лампы" height="25px" width="36px">
             <p>SCANDI</p>
             <nav>
                 <ul>
-                    <li>О компании</li>
-                    <li>Портфолио</li>
-                    <li>Команда</li>
-                    <li>Как мы работаем</li>
-                    <li>Отзывы клиентов</li>
-                    <li>Оставить заявку</li>
-                    <li class="phone">+7 (981) 857-46-24</li>
+                    <li><a href="#ab-us">О компании</a> </li>
+                    <li><a href="#case">Портфолио</a></li>
+                    <li><a href="#tm">Команда</a></li>
+                    <li><a href="#hww">Как мы работаем</a></li>
+                    <li><a href="#fb">Отзывы клиентов</a></li>
+                    <li><a href="#req">Оставить заявку</a></li>
+                    <li>+7 (981) 857-46-24</li>
                 </ul>
             </nav>
         </header>
@@ -32,8 +36,10 @@
             и&nbspпомогаем организовать доставку </p>
         <button>Оставить заявку</button>
     </section>
-    <section class="about-us">
+    <!-- о нас -->
+    <section class="about-us" id="ab-us">
         <h1>О нас</h1>
+        <img src="img/about-us.jpg" alt="стол с приборами и вазой">
         <p>Премиальный европейский текстиль — одно из самых главных направлений работы коллектива. Создавать
             неповторимые интерьеры для наших дорогих клиентов, уделяя внимание мельчайшим деталям — вот то, что
             по-настоящему вдохновляет дизайнеров нашей студии.
@@ -41,7 +47,102 @@
         <p> Наш коллектив сделает все, чтобы после сотрудничества с нами, Вам было приятно сказать:
             « Да! Это именно то, что действительно достойно моего дома!»</p>
 
+        <ul>
+            <li>5 лет опыта</li>
+            <li>100 проектов</li>
+            <li>10 наград</li>
+        </ul>
     </section>
+    <!-- портфолио -->
+    <section class="our-cases" id="case">
+        <h1>Наши работы</h1>
+        <h4>Квартира-студия 30 кв.м.</h4>
+        <p>В квартире были светлые стены и тёплые цвета. Мы сконцентрировались
+            на отсылках к природе и сделали ребятам уютный интерьер, отсылающий к виллам островов Бали.</p>
+        <img src="img/caseces-l-t.jpg" alt="спальня с кроватью">
+        <img src="img/caseces-r-t.jpg" alt="просторная кухня с барной стойкой">
+        <img src="img/caseces-l-b.jpg" alt="гостинная с диваном и журнальным столиком">
+        <img src="img/caseces-r-b.jpg" alt="">
+        <a href="test.html">Смотреть еще <img src="img/cases-arrow.svg" alt="стрелка вправо"></a>
+    </section>
+    <!-- команда -->
+    <section class="team" id="tm">
+        <h1>Команда</h1>
+        <figure>
+            <img src="img/team-masha.jpg" alt="девушка с рыжими волосами">
+            <figcaption>
+                <p>Это Маша, наш главный дизайнер. Она отвечает за дизайн-проект, приезжает к вам домой, общается
+                    и помогает сделать вашу квартиру красивой и уютной.</p>
+            </figcaption>
+        </figure>
+        <figure>
+            <img src="img/team-sasha.jpg" alt="девушка блондинка с каре">
+            <figcaption>
+                <p> С нашим менеджером Сашей вы познакомитесь в первую очередь. Она проконсультирует вас, соберёт все
+                    документы
+                    и ответит на все вопросы.</p>
+            </figcaption>
+        </figure>
+        <figure>
+            <img src="img/team-katya.jpg" alt="девушка блондинка с длинными волосами">
+            <figcaption>
+                <p>Катя тоже занимается дизайном.
+                    Она всегда находит общий язык
+                    с клиентами и точно знает,
+                    как обустроить дом так, чтобы вам понравилось.</p>
+            </figcaption>
+        </figure>
+    </section>
+    <!-- КАК МСЫ РАБОТАЕМ -->
+    <section class="process" id="hww">
+        <h1>как мы работаем</h1>
+        <ol>
+            <li>Знакомимся, выезжаем
+                на объект, утверждаем концепцию, подписываем договор.</li>
+            <li>Подбираем мебель, текстиль, аксессуары. Делаем 3D-
+                визуализацию.</li>
+            <li>Находим нужные магазины, помогаем с доставкой
+                и оплатой товаров.</li>
+            <li>Воплощаем проект в жизнь:
+                расставляем мебель и цветы, вешаем шторы, находим места для мелочей</li>
+        </ol>
+    </section>
+    <!-- отзывы  -->
+    <section class="feedback" id="fb">
+        <img src="img/fb-arrow-left.svg" alt="стрелка влево">
+        <img src="img/fb-arrow-right.svg" alt="стрелка вправо">
+        <h1>отзывы</h1>
+        <blockquote>
+            <p>«Восторг! Спасибо, за комфортную жизнь. Очень рада, что выбрала вашу студию для украшения своего дома.
+            </p>
+            <p>
+                Работа шла быстро, было очень приятно общаться и взаимодействовать
+                с сотрудниками. Не ожидала, что это будет так легко!
+            </p>
+            <p>
+                Буду советовать и своим друзьям к вам обращаться!»</p>
+            <cite>АННА БЕЛОВСКАЯ</cite>
+        </blockquote>
+    </section>
+    <!-- оставить заявку -->
+    <section class="req" id="req">
+        <h1>оставить заявку</h1>
+        <p>Оставьте свои контакты. Менеджер перезвонит
+            в удобное вам время и ответит на все вопросы.</p>
+
+        <form action="#">
+            <input type="text" name="name" value="Ваше имя"><br>
+            <input type="phone" name="phone" value="Введите телефон"><br>
+            <input type="submit" name="submit">
+        </form>
+        <img src="img/req-map.jpg" alt="карта местонахождения">
+    </section>
+    <footer>
+        <p>+7 (981) 857-46-24</p>
+        <p>г. Санкт-петербург, ул. Большая Конюшенная, 19</p>
+        <p>ИП Королёва А.А.</p>
+    </footer>
+
 </body>
 
 </html>
