@@ -3,8 +3,10 @@ body {
     font-family: 'Montserrat', sans-serif;
     font-display: swap;
     background-color: #EFE6E4;
-    ;
+    color: #533738;
 }
+
+/* -------------------------------------------------------------- */
 
 /* Секция 1.*/
 header {
@@ -14,7 +16,6 @@ header {
 /* Стиль текста для секции 1*/
 .section-top {
     font-style: normal;
-    color: #533738;
     height: 715px;
     background-image: url(img/bg-topa.jpg);
     background-size: 100%;
@@ -60,6 +61,11 @@ nav li {
     margin-right: 26.5px;
 }
 
+nav a {
+    text-decoration: none;
+    color: #533738;
+}
+
 nav ul {
     margin: 0;
 }
@@ -72,48 +78,282 @@ nav ul {
     font-weight: normal;
     font-size: 50px;
     line-height: 62px;
-    margin: 0;
-    position: absolute;
-    left: 184.08px;
-    top: 152px;
+
+    margin: 0px 0px 24px 0px;
     width: 534.02px;
     height: 186px;
 }
 
-.welcome {
-    position: absolute;
+.welcome p {
     width: 420px;
     height: 90px;
-    left: 184.08px;
-    top: 362px;
-    margin: 0;
+    margin: 0px 0px 21px 0px;
+
     font-size: 18px;
     line-height: 30px;
 }
 
 /* КНОПКА Оставить заявку */
 .section-top button {
-    position: absolute;
     width: 309px;
     height: 74px;
-    left: 183px;
-    top: 473px;
     background-color: #CC8B86;
     border: none;
+    margin: 0;
 
-    font-style: normal;
+
     font-weight: 500;
     font-size: 20px;
     line-height: 24px;
 }
 
-/* -------------------------------------------------------------- */
-/* SECTION 2 */
-
-.about-us h1 {
-    text-transform: uppercase;
-    text-align: center;
-    margin: 65px 0px 0px 0px;
+.welcome {
+    padding: 152px 0px 0px 185px;
 }
 
-.about-us
+/* -------------------------------------------------------------- */
+/* О НАС*/
+.about-us {
+    margin-top: 65px;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.about-us h1 {
+    text-align: center;
+    margin: 0px;
+    font-weight: normal;
+
+
+    text-transform: uppercase;
+    font-size: 40px;
+    line-height: 50px;
+}
+
+.about-us p {
+    font-size: 18px;
+    line-height: 30px;
+    width: 520px;
+    height: 330px;
+    margin: 0;
+}
+
+.about-us img {
+    width: 444.54px;
+    height: 465px;
+    margin-right: 62px;
+}
+
+.about-us div {
+    display: flex;
+    justify-content: center;
+    margin: 40px 182px 0px 182px;
+
+}
+
+.about-us ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 21px;
+    margin-bottom: 65px;
+    background-color: #8D7370;
+
+    height: 273px;
+    width: 100%;
+    color: rgb(255, 255, 255);
+}
+
+.about-us li p {
+    height: fit-content;
+    font-size: 50px;
+    line-height: 62px;
+    text-align: center;
+}
+
+.about-us li {
+    display: inline;
+    list-style: none;
+    text-align: center;
+
+    text-transform: uppercase;
+    font-size: 30px;
+    line-height: 37px;
+}
+
+/* -------------------------------------------------------------- */
+/* SECTION ПОРТФОЛИО */
+
+.our-cases {
+    font-weight: normal;
+    font-weight: 400;
+    margin: 0px 100px 0px 100px;
+    width: 100%;
+}
+
+.our-cases h1 {
+    font-weight: normal;
+    font-size: 40px;
+    line-height: 50px;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.flat {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    padding: 40px 100px 40px 100px;
+}
+
+.our-cases div img {
+    margin-bottom: 30px;
+}
+
+.descript {
+    background-color: rgba(100, 72, 69, 0.8);
+    line-height: 37px;
+    color: #FFFFFF;
+
+    margin: 0;
+    width: 488px;
+    height: 451px;
+
+}
+
+.descript div {
+    padding: 0 !important;
+}
+
+.descript h3 {
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 37px;
+    text-align: center;
+    margin: 0;
+    width: 270px;
+}
+
+.descript p {
+    font-size: 18px;
+    line-height: 30px;
+
+    width: 418px;
+    margin: 0;
+}
+
+.our-cases a {
+    text-decoration: none;
+    color: #533738;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 37px;
+    display: block;
+    text-align: center;
+}
+
+/* ----------------------------------- */
+/* команда */
+.team {
+    width: 1399px;
+    height: 998px;
+    background-color: #E2C4BA;
+    width: 100%;
+
+}
+
+.team h1 {
+    font-size: 40px;
+    line-height: 50px;
+    text-transform: uppercase;
+    font-weight: 400;
+    text-align: center;
+    padding-top: 50px;
+    margin: 0;
+
+
+}
+
+.galery {
+
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 182px 0px 182px;
+    margin: 0;
+
+}
+
+.galery figure {
+    margin: 0;
+}
+
+.galery img,
+p {
+    margin: 0;
+    width: 320px;
+    padding-top: 10px;
+
+    font-size: 18px;
+    line-height: 30px;
+}
+
+/* -------------------------------------------- */
+/* как мы работаем */
+.process h1 {
+    margin: 0;
+}
+
+.process {
+    padding: 35px 100px 0px 100px;
+}
+
+.process ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    align-content: center;
+    padding-top: 40px;
+
+}
+
+.process li {
+    width: 285px;
+    font-size: 18px;
+    line-height: 30px;
+    text-align: center;
+}
+
+.process ul div {
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 70px;
+    color: #FFFFFF;
+    text-align: center;
+    margin-left: 108px;
+
+
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    background: #8D7370;
+}
+
+/* ----------------------------------------- */
+/* отзывы */
+.feedback {
+    margin: 0px 182px 0px 182px;
+}
+
+.feedback h1 {
+    font-size: 40px;
+    line-height: 50px;
+    text-transform: uppercase;
+    font-weight: 400;
+    text-align: center;
+    padding-top: 50px;
+    margin: 0;
+
+}
