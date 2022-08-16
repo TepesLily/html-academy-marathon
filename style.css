@@ -94,7 +94,7 @@ nav ul {
 }
 
 /* КНОПКА Оставить заявку */
-.section-top button {
+.btn {
     width: 309px;
     height: 74px;
     background-color: #CC8B86;
@@ -355,5 +355,57 @@ p {
     text-align: center;
     padding-top: 50px;
     margin: 0;
+}
 
+/* ---------------------------------------------- */
+/* оставить заявку */
+.req {
+    background-color: #8D7370;
+    width: 100%;
+    padding-left: 182px;
+    padding-right: 100px;
+    color: #FFFFFF;
+}
+
+.req h1 {
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 50px;
+    text-transform: uppercase;
+    padding-top: 50px;
+    margin-bottom: 24px;
+
+}
+
+.req p {
+    opacity: 0.6;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+    width: 507px;
+    margin-bottom: 44px;
+}
+
+.req form {
+    width: 508px;
+
+}
+
+.req input {
+    background-color: #8D7370;
+    border: 0mm;
+    border-bottom: 1px solid white;
+    width: 508px;
+    font-size: 18px;
+    line-height: 30px;
+    color: #F6EDE9;
+    margin-bottom: 35px;
+}
+
+/* ----------------------- */
+/* footer */
+footer {
+    padding: 37px 100px;
+    display: flex;
+    justify-content: space-between;
 }
