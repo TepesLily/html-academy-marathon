@@ -1,93 +1,68 @@
-body {
+* {
     margin: 0;
+    padding: 0;
+}
+
+body {
     font-family: 'Montserrat', sans-serif;
     font-display: swap;
     background-color: #EFE6E4;
     color: #533738;
+    width: 100%;
+    /* max-width: 1400px; */
 }
 
 /* -------------------------------------------------------------- */
 
 /* Секция 1.*/
+
+/* навигация по странице вверху старинцы */
 header {
-    margin: 0;
+    padding: 36px 100px 0px 100px;
+    display: flex;
+    justify-content: space-between;
 }
 
 /* Стиль текста для секции 1*/
 .section-top {
-    font-style: normal;
-    height: 715px;
     background-image: url(img/bg-topa.jpg);
     background-size: 100%;
+    background-repeat: no-repeat;
+    height: 715px;
+    /* width: 1400px; */
 }
 
-header {
-    font-size: 16px;
-    line-height: 20px;
-}
-
-
-/* лого светильниК */
-header img {
-    position: absolute;
-    width: 25.34px;
-    height: 25px;
-    left: 98.32px;
-    top: 36px;
-}
-
-/* название лого SCANDI */
-header p {
-    position: absolute;
-    left: 124px;
-    top: 38px;
-    margin: 0;
-
-    font-size: 16px;
-    line-height: 20px;
-}
-
-/* навигация по странице вверху старинцы */
-nav {
-    margin-top: 0;
-    position: absolute;
-    left: 278px;
-    top: 38px;
-}
 
 nav li {
     list-style: none;
     display: inline;
-    margin-right: 26.5px;
+    margin-left: 26px;
+}
+
+nav li:last-child {
+    margin-left: 34px;
 }
 
 nav a {
     text-decoration: none;
     color: #533738;
+    font-size: 16px;
+    line-height: 20px;
 }
 
-nav ul {
-    margin: 0;
-}
-
-.phone {
-    margin-left: 8px;
-}
+/* Вводная часть */
 
 .section-top h1 {
     font-weight: normal;
     font-size: 50px;
     line-height: 62px;
-
-    margin: 0px 0px 24px 0px;
-    width: 534.02px;
-    height: 186px;
+    width: 520px;
+    margin-bottom: 24px;
 }
 
 .welcome p {
     width: 420px;
-    height: 90px;
-    margin: 0px 0px 21px 0px;
+    margin-bottom: 21px;
 
     font-size: 18px;
     line-height: 30px;
@@ -100,16 +75,16 @@ nav ul {
     background-color: #CC8B86;
     border: none;
     margin: 0;
-
-
     font-weight: 500;
     font-size: 20px;
     line-height: 24px;
 }
 
 .welcome {
-    padding: 152px 0px 0px 185px;
+    padding-left: 184px;
+    margin-top: 91px;
 }
+
 
 /* -------------------------------------------------------------- */
 /* О НАС*/
@@ -144,51 +119,75 @@ nav ul {
     margin-right: 62px;
 }
 
-.about-us div {
+.about-us__div {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     margin: 40px 182px 0px 182px;
 
 }
 
-.about-us ul {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.a-u_statistic {
+    display: grid;
+    grid-template: 66px 41px/ 1fr 1fr 1fr;
     margin-top: 21px;
     margin-bottom: 65px;
     background-color: #8D7370;
-
-    height: 273px;
-    width: 100%;
+    padding-top: 85px;
+    padding-bottom: 81px;
     color: rgb(255, 255, 255);
+    align-items: center;
+    text-align: center;
 }
 
-.about-us li p {
-    height: fit-content;
+.a-u_statistic span:nth-child(odd) {
     font-size: 50px;
     line-height: 62px;
-    text-align: center;
 }
 
-.about-us li {
-    display: inline;
-    list-style: none;
-    text-align: center;
-
-    text-transform: uppercase;
+.a-u_statistic span:nth-child(even) {
     font-size: 30px;
     line-height: 37px;
+    text-transform: uppercase;
+}
+
+.a-u_statistic span:nth-child(1) {
+    grid-area: 1/1/2/2;
+}
+
+.a-u_statistic span:nth-child(2) {
+    grid-area: 2/1/3/2;
+}
+
+.a-u_statistic span:nth-child(3) {
+    grid-area: 1/2/2/3;
+}
+
+.a-u_statistic span:nth-child(4) {
+    grid-area: 2/2/3/3;
+}
+
+.a-u_statistic span:nth-child(5) {
+    grid-area: 1/3/2/4;
+}
+
+.a-u_statistic span:nth-child(6) {
+    grid-area: 2/3/3/4;
 }
 
 /* -------------------------------------------------------------- */
 /* SECTION ПОРТФОЛИО */
 
+.layers {
+    display: grid;
+    grid-template: 451px/488px;
+}
+
+
 .our-cases {
     font-weight: normal;
     font-weight: 400;
-    margin: 0px 100px 0px 100px;
-    width: 100%;
+    padding: 0px 100px 65px 100px;
 }
 
 .our-cases h1 {
@@ -201,30 +200,33 @@ nav ul {
 
 .flat {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    justify-content: center;
     flex-wrap: wrap;
-    max-width: 1200px;
-    padding: 40px 100px 40px 100px;
+    gap: 20px;
+    margin-top: 40px;
+    margin-bottom: 40px;
 }
 
 .our-cases div img {
-    margin-bottom: 30px;
+    margin-bottom: 10px;
+}
+
+.layer__back {
+    grid-area: 1/1/2/2;
 }
 
 .descript {
     background-color: rgba(100, 72, 69, 0.8);
     line-height: 37px;
     color: #FFFFFF;
-
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     margin: 0;
     width: 488px;
     height: 451px;
-
-}
-
-.descript div {
-    padding: 0 !important;
+    grid-area: 1/1/2/2;
 }
 
 .descript h3 {
@@ -240,7 +242,7 @@ nav ul {
     font-size: 18px;
     line-height: 30px;
 
-    width: 418px;
+    width: 414px;
     margin: 0;
 }
 
@@ -254,13 +256,15 @@ nav ul {
     text-align: center;
 }
 
+.o-c-arrow {
+    margin-left: 10px;
+}
+
 /* ----------------------------------- */
 /* команда */
 .team {
-    width: 1399px;
     height: 998px;
     background-color: #E2C4BA;
-    width: 100%;
 
 }
 
@@ -361,7 +365,6 @@ p {
 /* оставить заявку */
 .req {
     background-color: #8D7370;
-    width: 100%;
     padding-left: 182px;
     padding-right: 100px;
     color: #FFFFFF;
