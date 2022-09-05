@@ -358,7 +358,28 @@ p {
     font-weight: 400;
     text-align: center;
     padding-top: 50px;
-    margin: 0;
+    margin-bottom: 40px;
+}
+
+.feed__slide {
+    display: grid;
+    grid-template: 1fr / 72px 834px 72px;
+    gap: 29px;
+    align-items: center;
+    padding-bottom: 65px;
+}
+
+.feed__fb {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.feed__img {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
 }
 
 /* ---------------------------------------------- */
@@ -368,6 +389,9 @@ p {
     padding-left: 182px;
     padding-right: 100px;
     color: #FFFFFF;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
 }
 
 .req h1 {
@@ -408,7 +432,17 @@ p {
 /* ----------------------- */
 /* footer */
 footer {
-    padding: 37px 100px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    gap: 42px;
+}
+
+.f_ip {}
+
+.center {
+    padding-left: calc(50% - 600px);
+    padding-right: calc(50% - 600px);
 }
